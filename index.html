@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Custom-Video</title>
+</head>
+<body>
+    <main class="main">
+        <div class="video">
+            <div class="container">                
+                <div class="video__player">
+                  <div class="video__player__border">
+                    <img class="video__player__border__img" src="assets/svg/elden-ring-border-leaf.png" alt="border">
+                  </div>
+                    <div class="video__player__poster"></div>
+                    <video class="video__player__viewer" src="assets/video/EldenRing.mp4" poster="./assets/img/5.jpg"></video>
+                    <div class="video__player__play-btn"></div>        
+                    <div class="video__player__controls">
+                        <div class="control__play-icon play"></div>
+                        <input type="range" value="0" min="0" max="100" step="1" class="control__progress range">
+                        <div class="control__time video__start">0:00</div>
+                        /
+                        <div class="control__time video__end">00:00</div>
+                        <div class="control__play-icon volume-icon"></div>
+                        <input type="range" value="0.4" min="0" max="1" step="0.05" class="control__volume range">
+                        <div class="control__play-icon fullscreen"></div>            
+                    </div>
+                    <div class="video__player__border">
+                      <img class="video__player__border__img" src="assets/svg/elden-ring-border-leaf.png" alt="border">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__data">
+              <p class="footer__data__copyright">©</p>
+              <p class="footer__data__year">2022</p>
+              <a class="footer__data__github__link" href="https://github.com/NadyaSamosiuk" target="_blank">github</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

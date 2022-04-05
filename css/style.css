@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url('../assets/img/Elden-ring-background-page.jpg');
+    background-size: cover;
+    color: #fff;
+    min-width: 320px;
+    min-height: 100vh;
+    font-size: 18px;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: #bdae82;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.video__player__border{
+    padding: 40px;
+}
+
+.video__player__border__img{
+    width: 100%;
+}
+.video__player{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.video__player__viewer{
+    border-radius: 20px 20px 0 0;
+    width: calc(100% + 4px);
+    height: auto;
+    border: 2px solid #bdae82;
+    border-bottom: 0;
+}
+.video__player__play-btn{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background-image: url('../assets/svg/1.svg');
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(201deg) brightness(86%) contrast(81%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.video__player__play-btn:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+.video__player__play-btn.hidden{
+   background-image: none;
+}
+
+.video__player__play-btn:hover{
+   filter: invert(80%) sepia(28%) saturate(364%) hue-rotate(7deg) brightness(84%) contrast(86%);
+}
+.video__player__controls{
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% + 4px);
+    height:60px;
+    padding: 0 20px 40px 20px;
+    background-color: #000000;
+    border: 2px solid #bdae82;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    color:  #c8c8c8;
+} 
+.control__play-icon{
+    width: 40px;
+    height: 36px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+.control__play-icon:hover,
+.control__play-icon:active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+.play {
+    background-image: url('../assets/svg/play.svg');
+}
+.pause {
+    background-image: url('../assets/svg/pause.svg');
+}
+.volume-icon{
+    background-image: url('../assets/svg/volume.svg');
+    margin-left: 5px;
+} 
+.volume-icon.mute {
+    background-image: url('../assets/svg/mute.svg');
+}
+.fullscreen{
+    background-image: url('../assets/svg/fullscreen.svg');
+    margin-left: 10px;
+}
+.control__progress,
+.control__volume {
+    background: linear-gradient(to right,#bdae82 0%,#bdae82 0%, #c8c8c8 0%, #c8c8c8 100%);
+    height: 10px;
+    width: calc(80% - 160px);
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    border-radius: 0.75em;
+    cursor: pointer;
+}
+.control__volume{
+    width: calc(20% - 40px);
+    background: linear-gradient(to right, #bdae82 0%,#bdae82 40%, #c8c8c8 40%,#c8c8c8 100%);
+    margin-left: 5px;
+}
+.control__progress::-webkit-slider-thumb,
+.control__volume::-webkit-slider-thumb{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  background:  #cebda1;
+  box-shadow: 0.3em 0.3em 0.4em #a08b4e inset, -0.3em -0.3em 0.4em #bdae82 inset;
+}
+.control__time{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+.footer__wrapper{
+    display: flex;
+    font-family: 'Rowdies', cursive;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    color: #bdae82;
+    width: 100%;
+    max-width: 1440px;
+}
+.footer__data{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.footer__data__copyright,
+.footer__data__year{
+    padding-right: 20px;
+}
+.footer__data__github__link:hover{
+    color: #808080;
+}
+
+
